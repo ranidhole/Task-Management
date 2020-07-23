@@ -1,0 +1,8 @@
+<div class='container-fluid'>
+    <div class="form-group">
+        <label for="usr">Name:</label>
+        <input type="text" class="form-control" #name  required="true">
+    </div>
+    <button type="button" class="btn btn-primary" (click)="onConfirmClick()" [disabled]='name.value.length <= 0' >OK</button>&nbsp;
+    <button type="button" class="btn btn-default" (click)="onclose()">Cancel</button>
+ </div>
